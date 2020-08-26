@@ -4,25 +4,32 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Counter</title>
-    <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
+    <title>My Daily Tasks</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/design.css" rel="stylesheet" />
 </head>
 
 <body>
-    <main>
-        <div class="container">
-            <h1>counter</h1>
-            <span id="value">0</span>
-            <div class="button-container">
-                <button class="btn decrease">decrease</button>
-                <button class="btn reset">reset</button>
-                <button class="btn increase">increase</button>
+    <div class="container">
+        <div class="header">
+            <div class="clear">
+                <i class="fa fa-refresh"></i>
+            </div>
+            <div id="date"></div>
+        </div>
+
+        <div class="content">
+            <ul id="list"></ul>
+
+            <div class="add-to-do">
+                <i class="fa fa-plus-circle"></i>
+                <input type="text" id="input" placeholder="Add another Task ⏎" />
             </div>
         </div>
-    </main>
-    <!-- javascript -->
-    <script src="counter.js"></script>
+    </div>
+    <script src="js/DailyTasks.js"></script>
 </body>
 
 </html>
